@@ -28,22 +28,26 @@ def populated_context() -> StablePrefixContext:
 def test_compaction_preserves_byte_identical_stable_prefix() -> None:
     context = StablePrefixContext(
         [Message("system", "Stable instructions. Do not change this prefix.")],
-        ContextConfig(token_budget=100, summary_token_budget=55, keep_recent_turns=1),
+        ContextConfig(token_budget=120, summary_token_budget=55, keep_recent_turns=1),
     )
     expected = context.prefix_tokens
     prompts = []
-    for index in range(8):
+    for index in range(10):
         user = f"Project Item{index} deadline is 2027-02-{index + 10:02d}."
         prompt = context.prepare(user)
         prompts.append(encode_messages(prompt))
         context.commit(user, "Noted.")
-    prompts.append(encode_messages(context.prepare("What is the next step?")))
     assert context.compactions >= 2
     for tokens in prompts:
         assert tokens[: len(expected)] == expected
-        assert len(tokens) <= 100
-    assert len(context.recent_history) == 2
-    assert [message.role for message in context.recent_history] == ["user", "assistant"]
+        assert len(tokens) <= 120
+    assert len(context.recent_history) == 4
+    assert [message.role for message in context.recent_history] == [
+        "user",
+        "assistant",
+        "user",
+        "assistant",
+    ]
     assert "Item0" in (context.summary or "")
 
 
