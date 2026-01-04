@@ -1,0 +1,125 @@
+{
+  "generated_at": "2026-11-14T15:23:19.654963+00:00",
+  "model": "deterministic rule-based project-deadline extractor; not a neural LLM",
+  "cache": "exact chained token prefixes, 16-token complete blocks, generation appended",
+  "pricing": {
+    "units": "synthetic USD per million tokens, not a provider quote",
+    "uncached_input": 1.0,
+    "cached_input": 0.5,
+    "output": 2.0
+  },
+  "context_config": {
+    "token_budget": 210,
+    "summary_token_budget": 88,
+    "keep_recent_turns": 2
+  },
+  "strategies": {
+    "full_history": {
+      "strategy": "full_history",
+      "tasks": 3,
+      "requests": 36,
+      "successful_tasks": 3,
+      "task_success_rate_pct": 100.0,
+      "expected_answers": 12,
+      "correct_answers": 12,
+      "answer_accuracy_pct": 100.0,
+      "prompt_tokens": 6126,
+      "cached_prompt_tokens": 5408,
+      "uncached_prompt_tokens": 718,
+      "prefix_cache_hit_rate_pct": 88.27946457721188,
+      "requests_with_cache_hit_pct": 97.22222222222223,
+      "completion_tokens": 240,
+      "mean_prompt_tokens": 170.16666666666666,
+      "compactions": 0,
+      "stable_prefix_violations": 0,
+      "total_cost_usd": 0.003902,
+      "cost_per_task_usd": 0.0013006666666666668,
+      "task_results": [
+        {
+          "id": "launch",
+          "all_expected_answers_correct": true
+        },
+        {
+          "id": "maintenance",
+          "all_expected_answers_correct": true
+        },
+        {
+          "id": "migration",
+          "all_expected_answers_correct": true
+        }
+      ]
+    },
+    "sliding_window": {
+      "strategy": "sliding_window",
+      "tasks": 3,
+      "requests": 36,
+      "successful_tasks": 0,
+      "task_success_rate_pct": 0.0,
+      "expected_answers": 12,
+      "correct_answers": 0,
+      "answer_accuracy_pct": 0.0,
+      "prompt_tokens": 3699,
+      "cached_prompt_tokens": 2448,
+      "uncached_prompt_tokens": 1251,
+      "prefix_cache_hit_rate_pct": 66.18004866180048,
+      "requests_with_cache_hit_pct": 97.22222222222223,
+      "completion_tokens": 180,
+      "mean_prompt_tokens": 102.75,
+      "compactions": 0,
+      "stable_prefix_violations": 0,
+      "total_cost_usd": 0.002835,
+      "cost_per_task_usd": 0.000945,
+      "task_results": [
+        {
+          "id": "launch",
+          "all_expected_answers_correct": false
+        },
+        {
+          "id": "maintenance",
+          "all_expected_answers_correct": false
+        },
+        {
+          "id": "migration",
+          "all_expected_answers_correct": false
+        }
+      ]
+    },
+    "stable_compaction": {
+      "strategy": "stable_compaction",
+      "tasks": 3,
+      "requests": 36,
+      "successful_tasks": 3,
+      "task_success_rate_pct": 100.0,
+      "expected_answers": 12,
+      "correct_answers": 12,
+      "answer_accuracy_pct": 100.0,
+      "prompt_tokens": 5472,
+      "cached_prompt_tokens": 4352,
+      "uncached_prompt_tokens": 1120,
+      "prefix_cache_hit_rate_pct": 79.53216374269006,
+      "requests_with_cache_hit_pct": 97.22222222222223,
+      "completion_tokens": 240,
+      "mean_prompt_tokens": 152.0,
+      "compactions": 6,
+      "stable_prefix_violations": 0,
+      "total_cost_usd": 0.003776,
+      "cost_per_task_usd": 0.0012586666666666666,
+      "task_results": [
+        {
+          "id": "launch",
+          "all_expected_answers_correct": true
+        },
+        {
+          "id": "maintenance",
+          "all_expected_answers_correct": true
+        },
+        {
+          "id": "migration",
+          "all_expected_answers_correct": true
+        }
+      ]
+    }
+  },
+  "stable_vs_full_cost_reduction_pct": 3.229113275243467,
+  "stable_vs_full_uncached_token_reduction_pct": -55.98885793871866
+}
