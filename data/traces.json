@@ -1,0 +1,164 @@
+[
+  {
+    "id": "launch",
+    "system": "You are a project operations assistant. Answer only from facts retained in the conversation. Keep project names and ISO dates exact. When no answer is available say I do not know. The following conversation contains project updates and questions. Treat earlier facts as valid unless a later update explicitly changes them. Preserve deadlines during compaction.",
+    "turns": [
+      {
+        "user": "Project Apollo deadline is 2027-03-14.",
+        "expected": null
+      },
+      {
+        "user": "Project Borealis deadline is 2027-04-19.",
+        "expected": null
+      },
+      {
+        "user": "The review covered owners, milestones, and documentation.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Apollo deadline?",
+        "expected": "Project Apollo deadline is 2027-03-14."
+      },
+      {
+        "user": "Project Cygnus deadline is 2027-05-22.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Borealis deadline?",
+        "expected": "Project Borealis deadline is 2027-04-19."
+      },
+      {
+        "user": "Project Delphi deadline is 2027-06-25.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Cygnus deadline?",
+        "expected": "Project Cygnus deadline is 2027-05-22."
+      },
+      {
+        "user": "The team discussed release readiness and remaining checks.",
+        "expected": null
+      },
+      {
+        "user": "Project Eos deadline is 2027-07-28.",
+        "expected": null
+      },
+      {
+        "user": "Project Flux deadline is 2027-08-30.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Delphi deadline?",
+        "expected": "Project Delphi deadline is 2027-06-25."
+      }
+    ]
+  },
+  {
+    "id": "maintenance",
+    "system": "You are a project operations assistant. Answer only from facts retained in the conversation. Keep project names and ISO dates exact. When no answer is available say I do not know. The following conversation contains project updates and questions. Treat earlier facts as valid unless a later update explicitly changes them. Preserve deadlines during compaction.",
+    "turns": [
+      {
+        "user": "Project Gemini deadline is 2028-01-11.",
+        "expected": null
+      },
+      {
+        "user": "Project Helios deadline is 2028-02-16.",
+        "expected": null
+      },
+      {
+        "user": "The review covered owners, milestones, and documentation.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Gemini deadline?",
+        "expected": "Project Gemini deadline is 2028-01-11."
+      },
+      {
+        "user": "Project Iris deadline is 2028-03-21.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Helios deadline?",
+        "expected": "Project Helios deadline is 2028-02-16."
+      },
+      {
+        "user": "Project Janus deadline is 2028-04-26.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Iris deadline?",
+        "expected": "Project Iris deadline is 2028-03-21."
+      },
+      {
+        "user": "The team discussed release readiness and remaining checks.",
+        "expected": null
+      },
+      {
+        "user": "Project Kronos deadline is 2028-05-27.",
+        "expected": null
+      },
+      {
+        "user": "Project Lyra deadline is 2028-06-28.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Janus deadline?",
+        "expected": "Project Janus deadline is 2028-04-26."
+      }
+    ]
+  },
+  {
+    "id": "migration",
+    "system": "You are a project operations assistant. Answer only from facts retained in the conversation. Keep project names and ISO dates exact. When no answer is available say I do not know. The following conversation contains project updates and questions. Treat earlier facts as valid unless a later update explicitly changes them. Preserve deadlines during compaction.",
+    "turns": [
+      {
+        "user": "Project Mira deadline is 2029-02-12.",
+        "expected": null
+      },
+      {
+        "user": "Project Nova deadline is 2029-03-17.",
+        "expected": null
+      },
+      {
+        "user": "The review covered owners, milestones, and documentation.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Mira deadline?",
+        "expected": "Project Mira deadline is 2029-02-12."
+      },
+      {
+        "user": "Project Orion deadline is 2029-04-22.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Nova deadline?",
+        "expected": "Project Nova deadline is 2029-03-17."
+      },
+      {
+        "user": "Project Polaris deadline is 2029-05-23.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Orion deadline?",
+        "expected": "Project Orion deadline is 2029-04-22."
+      },
+      {
+        "user": "The team discussed release readiness and remaining checks.",
+        "expected": null
+      },
+      {
+        "user": "Project Quasar deadline is 2029-06-24.",
+        "expected": null
+      },
+      {
+        "user": "Project Rhea deadline is 2029-07-25.",
+        "expected": null
+      },
+      {
+        "user": "What is the Project Polaris deadline?",
+        "expected": "Project Polaris deadline is 2029-05-23."
+      }
+    ]
+  }
+]
