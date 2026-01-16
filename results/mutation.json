@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-11-14T15:24:41.787446+00:00",
+  "restored_after_each_mutation": true,
+  "mutations": [
+    {
+      "mutation": "stable-prefix-replaced-during-render",
+      "path": "src/prompt_cache_compaction/context.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "2 failed, 2 passed in 0.07s"
+    },
+    {
+      "mutation": "compaction-drops-recent-complete-turns",
+      "path": "src/prompt_cache_compaction/context.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "1 failed, 2 passed in 0.05s"
+    },
+    {
+      "mutation": "semantic-numeric-evidence-boost-removed",
+      "path": "src/prompt_cache_compaction/semantic.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "1 failed, 1 passed in 0.05s"
+    },
+    {
+      "mutation": "prefix-cache-lookup-always-misses",
+      "path": "src/prompt_cache_compaction/cache.py",
+      "pytest_returncode": 1,
+      "pytest_summary": "2 failed, 3 passed in 0.08s"
+    }
+  ]
+}
